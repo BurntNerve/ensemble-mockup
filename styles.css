@@ -1,0 +1,78 @@
+.hero {
+  position: relative;
+  box-sizing: border-box;
+  height: 60vh
+}
+
+.hero .stripes {
+  /* background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%); */
+  display: grid;
+  grid: repeat(4, 1fr) / repeat(10, 1fr);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  transform: skewY(-12deg);
+  transform-origin: 0;
+  position: absolute;
+}
+
+.hero .stripes :nth-child(1) {
+  grid-column: span 10;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.hero .stripes :nth-child(2) {
+  grid-area: 3 / span 3 / auto / -1;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+.hero .stripes :nth-child(3) {
+  grid-row: 4;
+  grid-column: span 8;
+  /* background-color: #49FFAA; */
+  background-image: linear-gradient(to right, #49FFD6 0%, #49FFAA 100%);
+}
+
+.hero .stripes :nth-child(4) {
+  grid-row: 2;
+  grid-column: 2 / 6;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.hero .stripes :nth-child(5) {
+  grid-row: 3;
+  grid-column: 2 / 6;
+}
+
+/* .hero .stripes {
+  transform: skewY(-12deg);
+  transform-origin: 0;
+} */
+
+.hero-container {
+  display: flex;
+  height: 800px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-container .navbar {
+  height: 5vh;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 14px;
+}
+
+#logo {
+  background-color: none;
+}
+
+.container {
+  height: 100%;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
