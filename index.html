@@ -7,23 +7,59 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
+    <link href="dist/hamburgers.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
   </head>
 
   <body>
     <section class="header">
-
       <div class="angle">
       </div>
       <div class="container">
         <nav class="navbar">
           <h1 class="logo">ensemble</h1>
+          <button class="hamburger--collapse ham-menu" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+          </button>
         </nav>
         <div class="hero-info">
           <div class="info-container">
-            <h1>Your favorite new way to collaborate.</h1>
-            <h3>Ensemble is a digital meeting ground for theatre artists.</h3>
-            <button class="button success">Sign Up</button>
+            <h1 class="title">Your favorite new way to collaborate.</h1>
+            <h3 class="subtitle">Ensemble is a digital meeting ground for theatre artists to create projects and form communities.</h3>
+            <button class="button success">Create Account</button>
+            <button class="button">Sign In</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="trio">
+      <div class="container">
+        <div class="trio-flex">
+          <div class="trio-info">
+            <img class="trio-img" src="./images/conversation.svg" alt="Conversation">
+            <h1 class="title is-green">Factions</h1>
+            <p class="body">Once you join Ensemble, you'll be able to choose from 6 different factions: Actor, Director, Designer, Crew, Producer, and Writer. When you've created a project page you can proceed to search for people based on which faction you need. Does
+              your project require only a few actors but quite a lot of designers? Search within your community and find out who's nearby.</p>
+            <a class="trio-link is-blue" href="#">Discover your faction</a>
+            <hr class="line-break" />
+          </div>
+          <div class="trio-info even">
+            <img class="trio-img" src="./images/bulb.svg" alt="Light Bulb">
+            <h1 class="title is-blue">Projects</h1>
+            <p class="body">Projects are the real purpose for joining Ensemble. You can begin by creating a profile page for your project and reaching out to members of your community who you think would be a good fit. You can then set a schedule and begin the rehearsal
+              process. Once you've started rehearsals, Directors can post notes for every night on your project page and reach out to individual actors.
+            </p>
+            <a class="trio-link is-orange" href="#" #>Create a new project</a>
+          </div>
+          <div class="trio-info">
+            <img class="trio-img" src="./images/saving.svg" alt="Light Bulb">
+            <h1 class="title is-orange">Funding</h1>
+            <p class="body">Eventually you'll come up with an idea for a project so enormous you'll require some funds that you don't have. This is where funding comes into play. Seek out producers in your area to explain your project to and try to inspire some interest.
+              If you get some on board they can donate to your project right from it's profile and they'll be listed as a producer for that project.
+            </p>
+            <a class="trio-link is-green" href="#" #>Reach out to investors</a>
           </div>
         </div>
       </div>
