@@ -60,7 +60,7 @@ body {
 }
 
 .subtitle {
-  font-size: 3vh;
+  font-size: 2.7vh;
   font-weight: 100;
 }
 
@@ -70,7 +70,7 @@ body {
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
   font-size: 18px;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 .button {
@@ -80,13 +80,14 @@ body {
   color: #2c6de5;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  min-height: 2.5em;
+  /* min-height: 2em; */
   padding-left: 1rem;
   padding-right: 1rem;
-  transition: 1s ease;
-  min-width: 7.5em;
-  margin-right: 1em;
+  transition: .5s ease;
+  /* min-width: 6em; */
+  margin-right: .5em;
   display: inline-block;
+  padding: 10px 15px;
 }
 
 .button:hover {
@@ -101,6 +102,8 @@ body {
 
 .ham-menu {
   float: right;
+  border: none;
+  background-color: inherit;
 }
 
 .trio {
@@ -117,17 +120,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 85vh;
-  max-height: 530px;
+  justify-content: center;
+  /* height: vh; */
+  /* max-height: 530px; */
   width: 100%;
   max-width: 700px;
   box-sizing: border-box;
   /* border: 1px solid black; */
   padding-top: 20px;
   font-family: 'Lato', sans-serif;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .trio-info .title {
@@ -144,10 +149,17 @@ body {
 .trio-link {
   align-self: left;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
+  margin-top: 20px;
   position: absolute;
-  bottom: 20px;
+  bottom: 0;
+  transition: .5s ease;
+}
+
+.trio-link:hover {
+  transform: translateY(-3px) scale(1.1);
+  cursor: pointer;
 }
 
 .is-green {
@@ -155,15 +167,15 @@ body {
 }
 
 .is-orange {
-  color: #F3C14D;
+  color: #f3c14d;
 }
 
 .is-blue {
-  color: #70B6F7;
+  color: #70b6f7;
 }
 
 .is-purple {
-  color: #A448F6;
+  color: #a448f6;
 }
 
 .line-break {
@@ -175,10 +187,20 @@ body {
 }
 
 @media only screen and (min-width: 760px) {
+  .ham-menu {
+    display: none;
+  }
+  .trio-link {
+    /* position: absolute;
+    bottom: 20px; */
+  }
+}
+
+@media only screen and (min-width: 1000px) {
   .trio-flex {
     flex-direction: row;
   }
-  .ham-menu {
-    display: none;
+  .trio-info {
+    min-height: 510px;
   }
 }
